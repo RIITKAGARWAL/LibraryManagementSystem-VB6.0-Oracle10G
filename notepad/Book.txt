@@ -1,0 +1,8 @@
+BookId
+TitleOfBook
+Author
+Publisher
+Category
+Cost
+Copies
+Condition

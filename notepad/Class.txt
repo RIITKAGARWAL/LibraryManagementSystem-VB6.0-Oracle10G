@@ -1,0 +1,2 @@
+ClassId
+SeatingCapacity

@@ -1,0 +1,17 @@
+AdminId
+Name
+MotherName
+FatherName
+Gender
+DOB
+AadharNumber
+PANNumber
+DateOfJoining
+PermanentAddress
+CorrespondenceAddress
+ContactNumber
+WhatsappNumber
+Email
+Qualification
+Experience
+

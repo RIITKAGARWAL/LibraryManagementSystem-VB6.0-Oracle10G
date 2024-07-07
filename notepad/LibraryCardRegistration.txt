@@ -1,0 +1,13 @@
+CardId
+DateOfIssue
+
+Name
+Photo
+FatherName
+CollegeRollNumber
+Course
+Session
+Batch
+ContactNumber
+Criteria
+Paymnent

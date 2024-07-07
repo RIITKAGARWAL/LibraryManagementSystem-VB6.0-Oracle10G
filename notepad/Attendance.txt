@@ -1,0 +1,9 @@
+id
+Designation
+Name
+FatherName
+Present/absent
+TotalNumberOfWorkingDays
+TotalAttendance
+percentage
+Remark

@@ -1,0 +1,6 @@
+CourseId
+NoOfSemester
+Semester
+NoOfSubjects
+SubjectCode
+SubjectTitle

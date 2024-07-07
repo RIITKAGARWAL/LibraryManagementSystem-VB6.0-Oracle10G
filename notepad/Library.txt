@@ -1,0 +1,3 @@
+ShelfId 
+TotalBooks
+BookCapacity
