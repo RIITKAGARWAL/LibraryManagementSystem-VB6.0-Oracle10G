@@ -35,6 +35,28 @@ app.get('/api/health', async (req, res) => {
   }
 });
 
+const { logAction } = require('./services/auditService');
+
+app.post('/api/test-audit', async (req, res) => {
+  try {
+    const log = await logAction('TEST_FORENSIC_ACTION', 1, { details: 'System test audit record' });
+    res.status(201).json({
+      status: 'SUCCESS',
+      message: 'Hash-chained audit log created successfully',
+      log
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+const authRoutes = require('./routes/authRoutes');
+const productRoutes = require('./routes/productRoutes');
+
+// Mount routes
+app.use('/api/auth', authRoutes);
+app.use('/api/products', productRoutes);
+
 app.listen(PORT, () => {
   console.log(`[Nexus Core] Server running on port ${PORT}`);
 });
