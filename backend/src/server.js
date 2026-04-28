@@ -52,10 +52,12 @@ app.post('/api/test-audit', async (req, res) => {
 
 const authRoutes = require('./routes/authRoutes');
 const productRoutes = require('./routes/productRoutes');
+const orderRoutes = require('./routes/orderRoutes');
 
 // Mount routes
 app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
+app.use('/api/orders', orderRoutes);
 
 app.listen(PORT, () => {
   console.log(`[Nexus Core] Server running on port ${PORT}`);
